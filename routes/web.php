@@ -14,4 +14,5 @@
 Route::prefix('dashboard')->group(function () {
     Route::resource('/categories', 'CategoriesController');
     Route::resource('/websites', 'WebsitesController');
+    Route::resource('/item-schema', 'ItemSchemaController');
 });
