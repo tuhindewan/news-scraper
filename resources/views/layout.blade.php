@@ -60,7 +60,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{{url('/')}}">Web Scraper</a>
+                    <a class="navbar-brand" href="{{url('/')}}">News Scraper</a>
                 </div>
 
                 <div class="collapse navbar-collapse">
