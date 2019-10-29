@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da1055a7-ae4b-474e-8331-d7e68c26ddbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_29_095234_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_29_095234_create_articles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_29_095258_create_links_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_29_095258_create_links_table.php" afterDir="false" />
-    </list>
+    <list default="true" id="da1055a7-ae4b-474e-8331-d7e68c26ddbc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +150,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572341743189</updated>
-      <workItem from="1572341744542" duration="3753000" />
+      <workItem from="1572341744542" duration="4011000" />
     </task>
     <servers />
   </component>
