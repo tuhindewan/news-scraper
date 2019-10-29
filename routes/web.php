@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::prefix('dashboard')->group(function () {
+    Route::resource('/categories', 'CategoriesController');
 });
