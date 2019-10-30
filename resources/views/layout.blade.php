@@ -71,12 +71,12 @@
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Websites</a></li>
-                                <li><a href="#">Categories</a></li>
-                                <li><a href="#">Links</a></li>
-                                <li><a href="#">Item Schema</a></li>
+                                <li><a href="{{ url('dashboard/websites') }}">Websites</a></li>
+                                <li><a href="{{ url('dashboard/categories') }}">Categories</a></li>
+                                <li><a href="{{ url('dashboard/links') }}">Links</a></li>
+                                <li><a href="{{ url('dashboard/item-schema') }}">Item Schema</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Articles</a></li>
+                                <li><a href="{{ url('dashboard/articles') }}">Articles</a></li>
                             </ul>
                         </li>
                     </ul>

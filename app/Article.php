@@ -13,6 +13,7 @@ class Article extends Model
         return $this->belongsTo(Category::class, 'category_id');
     }
 
+
     public function website()
     {
         return $this->belongsTo(Website::class, 'website_id');

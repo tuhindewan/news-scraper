@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Link extends Model
 {
     protected $table = 'links';
-    protected $fillable = ['url', 'main_filter_selector', 'website_id', 'category_id'];
+    protected $fillable = ['url', 'main_filter_selector', 'website_id', 'category_id', 'item_schema_id'];
 
     public function category()
     {

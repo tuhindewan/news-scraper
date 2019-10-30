@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Category;
 use App\ItemSchema;
+use App\Lib\Scraper;
 use App\Link;
 use App\Website;
+use Goutte\Client;
 use Illuminate\Http\Request;
 
 class LinksController extends Controller
@@ -18,8 +20,7 @@ class LinksController extends Controller
     public function index()
     {
         $links = Link::orderBy('id', 'DESC')->paginate(10);
-        $itemSchemas = ItemSchema::all();
-        return view('link.index', compact('links', 'itemSchemas'));
+        return view('link.index', compact('links'));
     }
 
     /**
@@ -31,7 +32,8 @@ class LinksController extends Controller
     {
         $categories = Category::all();
         $websites = Website::all();
-        return view('link.create', compact('categories', 'websites'));
+        $itemSchemas = ItemSchema::all();
+        return view('link.create', compact('categories', 'websites', 'itemSchemas'));
     }
 
     /**
@@ -46,7 +48,8 @@ class LinksController extends Controller
             'url' => 'required',
             'main_filter_selector' => 'required',
             'website_id' => 'required',
-            'category_id' => 'required'
+            'category_id' => 'required',
+            'item_schema_id' => 'required'
         ]);
         Link::create($request->all());
         return redirect()->route('links.index');
@@ -73,8 +76,9 @@ class LinksController extends Controller
     {
         $categories = Category::all();
         $websites = Website::all();
+        $itemSchemas = ItemSchema::all();
 
-        return view('link.edit', compact('link', 'categories', 'websites'));
+        return view('link.edit', compact('link', 'categories', 'websites', 'itemSchemas'));
     }
 
     /**
@@ -107,5 +111,24 @@ class LinksController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+
+    public function scrape(Link $link)
+    {
+
+        if(empty($link->main_filter_selector) && (empty($link->item_schema_id) || $link->item_schema_id == 0)) {
+            return;
+        }
+
+        $scraper = new Scraper(new Client());
+
+        $scraper->handle($link);
+
+        if($scraper->status == 1) {
+            return redirect()->back()->with('message', 'SCRAPING DONE!');
+        } else {
+            return response()->json(['status' => 2, 'msg' => $scraper->status]);
+        }
     }
 }

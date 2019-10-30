@@ -98,6 +98,25 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="form-group">
+
+                            <strong>Item Schema:</strong>
+
+                            <select name="item_schema_id" class="form-control">
+                                <option value="">select</option>
+
+                                @foreach($itemSchemas as $itemSchema)
+                                    <option value="{{ $itemSchema->id }}" {{ $itemSchema->id==$link->item_schema_id?"selected":"" }}>
+                                        {{ $itemSchema->title }}
+                                    </option>
+                                @endforeach
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
 
