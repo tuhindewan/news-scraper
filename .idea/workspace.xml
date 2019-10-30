@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da1055a7-ae4b-474e-8331-d7e68c26ddbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/item-schema/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/item-schema/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/item-schema/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/link/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/link/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/link/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ItemSchema.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ItemSchema.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_29_095245_create_item_schemas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_29_095245_create_item_schemas_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Link.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Link.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +15,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -173,6 +172,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572341743189</updated>
       <workItem from="1572341744542" duration="8055000" />
+      <workItem from="1572412494965" duration="1652000" />
     </task>
     <servers />
   </component>
@@ -184,7 +184,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
