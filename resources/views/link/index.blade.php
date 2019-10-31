@@ -12,6 +12,12 @@
                 </div>
             @endif
 
+            @if(session()->has('error'))
+                <div class="alert alert-danger">
+                    {{ session()->get('error') }}
+                </div>
+            @endif
+
             <a href="{{ route('links.create') }}" class="btn btn-warning pull-right">Add new</a>
 
             @if(count($links) > 0)
